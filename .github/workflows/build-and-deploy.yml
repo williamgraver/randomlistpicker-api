@@ -1,14 +1,15 @@
 # .github/workflows/build-and-deploy.yml
 
-name: Node.js CI
+name: Build and Deploy
 permissions:
   contents: write
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - master 
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
