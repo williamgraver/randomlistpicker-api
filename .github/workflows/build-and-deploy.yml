@@ -13,23 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
-        with:
-          # update the Node version to meet your needs
-          node-version: 16
-          cache: npm
-
-      - name: Build
+     - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           npm ci
           npm run build
-          npm run export
-          touch out/.nojekyll
 
-      - name: Deploy
-        # https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@4
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: out
+          folder: build # The folder the action should deploy.
