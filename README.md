@@ -1,2 +1,1 @@
-# randomlistpicker-api
-Get a random element in a list passed in URL parameter
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).

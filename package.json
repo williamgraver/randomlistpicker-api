@@ -3,12 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "@igloo-ui/list": "^0.2.0",
     "@igloo-ui/tag-picker": "^0.1.4",
-    "@zeit/next-css": "^1.0.1",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",

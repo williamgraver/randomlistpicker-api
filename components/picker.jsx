@@ -1,8 +1,6 @@
 // import List from '@igloo-ui/list';
-import Button from '@igloo-ui/button';
-export default function Picker({ elements }) {
 
-        
+export default function Picker({ elements }) {
         return (
         // <List
         //     // options={optionList}
@@ -11,6 +9,6 @@ export default function Picker({ elements }) {
         //     // selectedOption={selectedOption}
         //     // focusedOption={focusedOption}
         //  />
-          <div>Yo <Button></Button></div>
-          ); 
+          <div>Yo</div>
+        );
 }
